@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>STOPWATCH</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- G-FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lora&family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="title-container">
+      <h1 id="title">STOPWATCH</h1>
+    </div>
+
+    <div class="content-container">
+      <div id="hour-counter" class="hour-count counter">
+        <div class="clock-numbers">0</div>
+        <div class="clock-numbers">0</div>
+      </div>
+      <div class="div1 counter">:</div>
+      <div id="min-counter" class="min-count counter">
+        <div class="clock-numbers">0</div>
+        <div class="clock-numbers">0</div>
+      </div>
+      <div class="div2 counter">:</div>
+      <div id="sec-counter" class="sec-count counter">
+        <div class="clock-numbers">0</div>
+        <div class="clock-numbers">0</div>
+      </div>
+      <div class="hour-text counter-text">HOURS</div>
+      <div class="space1"></div>
+      <div class="min-text counter-text">MINUTES</div>
+      <div class="space2"></div>
+      <div class="sec-text counter-text">SECONDS</div>
+    </div>
+
+    <div class="buttons-container">
+      <button id="settings-btn" class="btn settings-btn"></button>
+      <button id="start-pause-btn" class="btn start-pause-btn"></button>
+      <button id="stop-btn" class="btn stop-btn"></button>
+    </div>
+
+    <div id="settings-container" class="settings-container-off">
+
+      <select id="dropdown-select" class="dropdown-select">
+        <option value="Stopwatch">STOPWATCH</option>
+        <option value="Countdown">COUNTDOWN</option>
+      </select>
+
+      <div class="buttons-container">
+        <button class="btn-number">1</button>
+        <button class="btn-number">2</button>
+        <button class="btn-number">3</button>
+        <button class="btn-number">4</button>
+        <button class="btn-number">5</button>
+        <button class="btn-number">6</button>
+        <button class="btn-number">7</button>
+        <button class="btn-number">8</button>
+        <button class="btn-number">9</button>
+        <button class="btn-number">0</button>
+      </div>
+
+      <div class="buttons-container">
+        <button id="clear-btn" class="btn-clear">CLEAR</button>
+        <button id="save-btn" class="btn-save">SAVE</button>
+      </div>
+
+
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+  <footer><a href="https://twitter.com/arrobanatalia" target="_blank">@arrobanatalia</a></footer>
+</html>
