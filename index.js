@@ -1,12 +1,7 @@
-// -------/ READ ME /-------
-// This is a Stopwatch / Countdown app made with plain HTML, CSS, JS.
-// It's not responsive yet.
-// contact-me at twitter: @arrobanatalia
-
 // -------/ GLOBAL VARIABLES /-------
 var time = 0;
 var clockType = "Stopwatch";
-var running = 0; // 0 = False (timer not running) ; 1 = True (timer running);
+var running = 0; // 0 = False (timer not running); 1 = True (timer running);
 
 // -------/ HTML ELEMENTS /-------
 var clockNumbers = document.getElementsByClassName("clock-numbers");
@@ -21,7 +16,7 @@ var buttonClear = document.getElementById("clear-btn");
 var buttonSave = document.getElementById("save-btn");
 
 // -------/ EVENT LISTENERS /-------
-// Start-Pause Button
+// Start-Pause Button - starts/pause clock
 buttonStartPause.addEventListener("click", function(){
   startPause();
 });
@@ -71,7 +66,7 @@ buttonClear.addEventListener("click", function(){
   }
 });
 
-// Save Button
+// Save Button - hides settings container
 buttonSave.addEventListener("click", function(){
   if (settingsContainer.class = "settings-container-off") {
     settingsContainer.classList.toggle("settings-container-on");
